@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
-import {AiOutlineHome} from 'react-icons/ai'
-import {BsPerson, BsCode} from 'react-icons/bs'
-import {FaGraduationCap, FaUniversity} from 'react-icons/fa'
-import {RiFilePaper2Line} from 'react-icons/ri'
+import {AiFillHome} from 'react-icons/ai'
+import {BsPersonFill} from 'react-icons/bs'
+import {FaGraduationCap, FaUniversity, FaFacebookSquare, FaGithub} from 'react-icons/fa'
+import {RiFilePaper2Line, RiCodeFill} from 'react-icons/ri'
+import {MdEmail} from 'react-icons/md'
+
 import PropTypes from 'prop-types'
 
 export const NavbarData = [
     {
         title: "Home",
-        icon: <AiOutlineHome/>,
+        icon: <AiFillHome/>,
         link: "/"
     },
     {
         title: "About me",
-        icon: <BsPerson/>,
+        icon: <BsPersonFill/>,
         link: "/about"
     },
     {
@@ -23,7 +25,7 @@ export const NavbarData = [
     },
     {
         title: "Skills",
-        icon: <BsCode/>,
+        icon: <RiCodeFill/>,
         link: "/skills"
     },
     {
@@ -36,4 +38,22 @@ export const NavbarData = [
         icon: <FaUniversity/>,
         link: "/thesis"
     }
+]
+
+export const footerData = [
+    {
+        title: "Facebook",
+        icon: <FaFacebookSquare/>,
+        link: "/thesis"
+    },
+    {
+        title: "GitHub",
+        icon: <FaGithub/>,
+        link: "/thesis"
+    },
+    {
+        title: "Gmail",
+        icon: <MdEmail/>,
+        link: "/thesis"
+    },
 ]
